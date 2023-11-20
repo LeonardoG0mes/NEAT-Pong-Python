@@ -14,6 +14,12 @@ class PongGame:
         self.left_paddle = self.game.left_paddle
         self.right_paddle = self.game.right_paddle
 
+        # Configurações personalizadas
+        self.score_goal = 1  # Define a meta de pontos inicial
+        self.codigo_secreto = "130322IcePollar230415"  # Código secreto inicial
+        self.message_on_goal = "Parabéns! Você atingiu a meta de pontos e recebeu uma parte do código secreto."
+
+
     def test_ai(self, net):
         """
         Test the AI against a human player by passing a NEAT neural network
@@ -165,3 +171,5 @@ if __name__ == '__main__':
 
     run_neat(config)
     test_best_network(config)
+
+    

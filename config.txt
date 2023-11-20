@@ -1,6 +1,6 @@
 [NEAT]
 fitness_criterion     = max
-fitness_threshold     = 400
+fitness_threshold     = 10
 pop_size              = 50
 reset_on_extinction   = False
 
@@ -77,3 +77,7 @@ weight_replace_rate     = 0.1
 
 [DefaultSpeciesSet]
 compatibility_threshold = 3.0
+
+
+[CustomSettings]
+score_goal = 10
